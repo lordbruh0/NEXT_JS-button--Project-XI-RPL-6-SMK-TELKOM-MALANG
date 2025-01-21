@@ -1,6 +1,6 @@
 "use client"
 
-import { ButtonSuccess, ButtonWarning, ButtonDanger } from "@/components/button"
+import { ButtonSuccess, ButtonWarning, ButtonDanger, ButtonOutlineSucces, ButtonOutlineWarning, ButtonOutlineDanger } from "@/components/button"
 
 const TestButton = () => {
     return(
@@ -14,6 +14,15 @@ const TestButton = () => {
             <ButtonDanger type="button" className="ml-2" onClick={() => alert("Danger button clicked!")}>
                 Danger Button
             </ButtonDanger>
+            <ButtonOutlineSucces type="button" className="ml-2" onClick={() => alert("Succes outline button clicked!")}>
+               Succes Outline Button
+           </ButtonOutlineSucces>
+           <ButtonOutlineWarning type="button" className="ml-2" onClick={() => alert("Warning outline button clicked!")}>
+               Warning Outline Button
+           </ButtonOutlineWarning>
+           <ButtonOutlineDanger type="button" className="ml-2" onClick={() => alert("Danger outline button clicked!")}>
+               Danger Outline Button
+           </ButtonOutlineDanger>
         </div>
     )
  }

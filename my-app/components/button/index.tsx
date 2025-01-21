@@ -37,3 +37,29 @@ export const ButtonSuccess = ({ children, type, onClick, className }: Props) => 
  }
  
  
+export const ButtonOutlineSucces = ({ children, type, onClick, className }: Props) => {
+    return (
+        <button className={`text-sm bg-green-200 rounded-md text-green-800 py-2 px-4 shadow-md border-2 border-green-800 font-bold ${className}`}
+            type={type} onClick={() => { if (onClick) onClick() }}>
+            {children}
+        </button>
+    )
+}
+
+export const ButtonOutlineWarning = ({ children, type, onClick, className }: Props) => {
+    return (
+        <button className={`text-sm bg-yellow-200 rounded-md text-yellow-800 py-2 px-4 shadow-md border-2 border-yellow-800 font-bold ${className}`}
+            type={type} onClick={() => { if (onClick) onClick() }}>
+            {children}
+        </button>
+    )
+}
+
+export const ButtonOutlineDanger = ({ children, type, onClick, className }: Props) => {
+    return (
+        <button className={`text-sm bg-red-200 rounded-md text-red-800 py-2 px-4 shadow-md border-2 border-red-800 font-bold ${className}`}
+            type={type} onClick={() => { if (onClick) onClick() }}>
+            {children}
+        </button>
+    )
+}
